@@ -15,7 +15,7 @@ class MeanShift(nn.Conv2d):
         self.bias.data.div_(std)
         self.requires_grad = False
 
-
+   
 
 def make_optimizer(args, my_model):
     trainable = filter(lambda x: x.requires_grad, my_model.parameters())
