@@ -3,7 +3,7 @@ import torch.optim.lr_scheduler as lrs
 import torch
 from torch.autograd import Variable
 import torch.nn as nn
-
+import cv2
 
 class MeanShift(nn.Conv2d):
     def __init__(self, rgb_range, rgb_mean, rgb_std, sign=-1):
